@@ -38,6 +38,7 @@ def returnhome():
 ### Data Model Pages #
 @application.route("/logisticRegression.html")
 def datamodel_linearRegression():
+    
     return render_template("/logisticRegression.html")
 
 @application.route("/randomForest.html")
