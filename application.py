@@ -1,10 +1,12 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, jsonify
 # from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, Float 
 import pandas as pd
 from IPython.display import HTML
+import joblib
+import traceback
 
 
 # rds_connection_string = "postgres:postgres@localhost:5432/restaurants_db"
@@ -38,7 +40,6 @@ def returnhome():
 ### Data Model Pages #
 @application.route("/logisticRegression.html")
 def datamodel_linearRegression():
-    
     return render_template("/logisticRegression.html")
 
 @application.route("/randomForest.html")
@@ -49,9 +50,9 @@ def datamodel_randomForest():
 def datamodel_neuralNetworks():
     return render_template("/neuralNetworks.html")
 
-@application.route("/comparison.html")
-def comparison():
-    return render_template("/comparison.html")
+# @application.route("/comparison.html")
+# def comparison():
+#     return render_template("/comparison.html")
 
 # @application.route("/data.html")
 # def data():
