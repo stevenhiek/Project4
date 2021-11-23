@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Yelp Arizona</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" type="text/css" href="/static/styles/style14.css">
+</head>
+
+<body>
+
+  <!--Navbar adjustments-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand text-white" href="index.html"> Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Data Models
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-dark" href="logisticRegression.html"> Logistic Regression </a></li>
+              <li><a class="dropdown-item text-dark" href="randomForest.html"> Random Forest </a></li>
+              <li><a class="dropdown-item text-dark" href="neuralNetworks.html"> Neural Networks </a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <img class="yelp" src="https://upload.wikimedia.org/wikipedia/commons/a/ad/Yelp_Logo.svg" width="25%">
+  <h3>Arizona</h3>
+  <!-- <img src= "data:image/png;base64,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" alt= Arizona  -->
+  <!--create container, rows and columns and add images -->
+  <div class="container content">
+    <div class="row">
+      <!-- <div class="col-md-12"> -->
+      <div class="col-md-12" , id="map-restaurants">
+
+
+        <hr>
+
+
+        <p></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container content">
+    <div class="row">
+      <div class="col-md-6" id="plot">
+        <!-- <h3>bar chart</h3>
+                    <hr> -->
+      </div>
+
+      <div class="col-md-6" id="plot1">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container content">
+    <div class="row">
+      <div class="col-md-12" id="plotk">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container content" >
+    <div class="row">
+      <div class="col-md-6">
+        {{topten | safe}}
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- D3 library -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <!-- Leaflet JavaScript code -->
+  <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+  <!-- Icons -->
+  <script src="/static/js/leaflet.extra-markers.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="/static/styles/leaflet.extra-markers.min.css">
+
+  <!-- MomentJS -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+  <!-- polyfill.io is the library for using newer JavaScript features (such as Object.assign) in older browers. -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="/static/js/anime.min.js"></script>
+  <script> anime({
+      targets: '.yelp',
+      rotateZ: 720,
+
+    });</script>
+
+
+  <!-- Marker cluster CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css"> -->
+
+  <!-- <script type="text/javascript" src="/static/js/restaurant_map.js"></script> -->
+  <script type="text/javascript" src="/static/js/main.js"></script>
+  <script type="text/javascript" src="/static/js/logic.js"></script>
+  <script type="text/javascript" src="/static/js/plot.js"></script>
+  <script type="text/javascript" src="/static/js/plots.js"></script>
+  <!-- <script type="text/javascript" src="/static/js/scrollProperty.js"></script> -->
+  <footer class="page-footer font-small footer-dark">
+
+  </footer>
+</body>
+
+</html>
