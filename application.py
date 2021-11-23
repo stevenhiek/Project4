@@ -52,9 +52,9 @@ def datamodel_neuralNetworks():
 def comparison():
     return render_template("/comparison.html")
 
-@application.route("/data.html")
-def data():
-    return render_template("/data.html")
+# @application.route("/data.html")
+# def data():
+#     return render_template("/data.html")
 
 
 if __name__ == "__main__":
