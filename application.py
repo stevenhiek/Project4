@@ -49,15 +49,6 @@ def datamodel_randomForest():
 def datamodel_neuralNetworks():
     return render_template("/neuralNetworks.html")
 
-# @application.route("/comparison.html")
-# def comparison():
-#     return render_template("/comparison.html")
-
-# @application.route("/data.html")
-# def data():
-#     return render_template("/data.html")
-
-
 if __name__ == "__main__":
     application.run(debug=True)
 
